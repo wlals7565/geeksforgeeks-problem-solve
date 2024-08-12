@@ -1,0 +1,2 @@
+
+// node segregateevenanddddnumbers.js

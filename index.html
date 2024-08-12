@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+      //모달 창 본체입니다.
+      this.createLectureModal = document.createElement('div');
+        this.createLectureModal.classList.add('create-lecture-modal');
+        document.body.appendChild(this.createLectureModal);
+        this.createLectureModal.style.width = '50vw';
+    
+        //모달을 닫기 위한 버튼을 만듭니다.
+        this.closeBtn = document.createElement('button');
+        this.closeBtn.textContent = 'X';
+        this.closeBtn.style.position = 'relative';
+        this.closeBtn.style.display = 'block'; // display를 block으로 변경
+        this.closeBtn.style.float = 'right'; // float 속성 추가하여 오른쪽에 위치
+        this.closeBtn.style.border = 'none';
+        this.closeBtn.style.right = '35px'; // 오른쪽으로부터의 거리 조절
+        this.closeBtn.style.backgroundColor = 'white';
+        this.closeBtn.style.fontWeight = 'bold';
+        this.createLectureModal.appendChild(this.closeBtn);
+    
+        //모달에 강의 관리라는 타이틀을 답니다.
+        this.createLectureModalTitle = document.createElement('div');
+        this.createLectureModalTitle.textContent = '강의 생성';
+        this.createLectureModalTitle.style.fontSize = '1.5rem';
+        this.createLectureModalTitle.style.fontWeight = 'bold';
+        this.createLectureModalTitle.style.textAlign = 'center';
+        this.createLectureModal.appendChild(this.createLectureModalTitle);
+    
+        this.createLectureModalSubTitle = document.createElement('div');
+        this.createLectureModalSubTitle.textContent = '강의 이름 입력창';
+        this.createLectureModalSubTitle.style.fontSize = '1.2rem';
+        this.createLectureModalSubTitle.style.fontWeight = 'bold';
+        this.createLectureModalSubTitle.style.textAlign = 'center';
+        this.createLectureModal.appendChild(this.createLectureModalSubTitle);
+
+        this.lectureItemListBox = document.createElement('div');
+        this.lectureItemListBox.style.border = '1px solid black';
+        this.lectureItemListBox.style.width = '90%';
+        this.lectureItemListBox.style.height = '70vh';
+        this.lectureItemListBox.style.marginLeft = "5%";
+        this.lectureItemListBox.style.marginTop = "5%";
+        this.createLectureModal.appendChild(this.lectureItemListBox);
+</script>
+</html>
