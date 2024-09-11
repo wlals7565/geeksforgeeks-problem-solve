@@ -1,6 +1,6 @@
 class Solution {
   // Function to find equilibrium point in the array.
-  equilibriumPoint(arr) {
+  findEquilibrium(arr) {
       let sum = 0;
       for(let i=0; i<arr.length; i++) {
         sum += arr[i]
