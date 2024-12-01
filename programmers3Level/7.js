@@ -31,3 +31,5 @@ function solution(m, n, puddles) {
   // 최종 목표 위치 결과 반환
   return map.get(`${m},${n}`) || 0;
 }
+
+// 틀린 이유 잘못된 .... 넓이 접근
